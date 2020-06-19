@@ -1,0 +1,319 @@
+\documentclass[letterpaper,10.5pt]{article}
+
+%\usepackage{fontspec}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+%\setmainfont{Noto Serif KR}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.475in}
+%\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+ 	#1 \vspace{-2.365pt}
+  }
+}
+
+\newcommand{\resumeItemExtra}[2]{
+  \item\small{
+ 	\textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+     \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeCenteredSubheading}[3]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeOneLineSubheading}[2]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingExtra}[6]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+     \textit{\small#3} & \textit{\small #4} \\
+     \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItemExtra{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r @{\extracolsep{\fill}}r}
+\href{https://andrewnc.github.io/}{https://andrewnc.github.io}& \textbf{\Huge Andrew Carr} & \href{mailto:andrewcarr06@gmail.com}{andrewcarr06@gmail.com}\\
+%& & (509)-654-8520
+\end{tabular*}
+
+ %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+	\resumeSubheading
+       {M.S. Computer Science; 4.0}{2020}
+       {Brigham Young University}{Provo, UT}
+    \resumeSubheading
+      {B.S. Applied and Computational Mathematics; 3.81}{2018}
+      {Brigham Young University}{Provo, UT}
+
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+  
+   \resumeOneLineSubheading
+    {Google Brain - Research Intern}{May - Oct 2020}
+      \resumeItemListStart      
+        \resumeItem{Design and orchestrate experiments requiring massive compute on internal infrastructure}
+        \resumeItem{Develop expertise in automatic differentiation and modern semi-supervised learning techniques}
+     \resumeItemListEnd
+
+
+ \resumeOneLineSubheading
+    {Lyft, Level 5, Autonomous Vehicles - Prediction Intern}{June - Aug 2019}
+      \resumeItemListStart
+% add info about parallel processing      
+        \resumeItem{Developed A/B testing platform in high performant C++ to compare prediction models locally and in the cloud greatly increasing my team's development velocity}
+        \resumeItem{Identified predictive features and developed real-time feature extraction system for use in machine learning pipeline}
+        \resumeItem{Explored statistical and neural models for dynamical vehicle motion prediction leading to a 22.5\% performance improvement}
+        \resumeItem{Lead 3 engineers in exploratory 20\% project for semantic code search}
+        \resumeItem{Utilized: c++, python, mathematical modeling, machine learning, GIS, geometry, data engineering}
+     \resumeItemListEnd
+
+    \resumeOneLineSubheading
+    {Qualtrics - NLP Intern}{May - Aug 2018}
+      \resumeItemListStart
+% add info about parallel processing      
+        \resumeItem{Achieved $\sim$96\% accuracy with a .005\% false positive rate, matching state of the art on phishing detection by researching and implementing system using sophisticated NLP feature engineering and machine learning}
+        \resumeItem{Increased speed of system 3x resulting in a 63\% reduction in hardware costs while handling 3 million daily requests by engineering asynchronous API using parallel processing and high performance computing techniques}
+        \resumeItem{Identified, explored, and implemented state of the art emerging topic tracking system which allowed my team to reach their stretch goals for the quarter and led to a \textbf{patent}}
+        \resumeItem{The final estimated impact of my internship is \$300k - 500k in yearly savings}
+        \resumeItem{Utilized: python, parallel processing, fraud detection, javascript, html/css, machine learning, git, docker, NLP }
+%        \resumeItem{Built question similarity tool using sentence embeddings after collecting and curating a dataset of $\sim$130,000 questions. Improved f1 score from .3 to $\sim$.7 built using both structured and unstructured datasets}
+%         \resumeItem{Crafted proof of concept implementation of state of the art emerging topics tracking system using a kalman filter/LDA hybrid algorithm}
+     \resumeItemListEnd
+
+    \resumeOneLineSubheading
+    {Amazon Alexa Prize Team Eve - Machine Learning Researcher}{Jan - Apr 2018}
+      \resumeItemListStart
+       \resumeItem{Designed and built an offensive speech filtering system using probabilistic methods, which performed $\sim$3\% better than current industry standards}
+        \resumeItem{Researched and designed a complex sentiment analysis tool that classified sentences as having complex sentiment used for noteworthy knowledge retrieval}
+        \resumeItem{Utilized: python, natural language processing, client/server architecture, naive bayes}
+        
+   \resumeItemListEnd
+     
+    \resumeOneLineSubheading
+    {Perception, Control, and Cognition Lab - Deep Learning Researcher}{Dec 2016 - Present}
+      \resumeItemListStart
+      \resumeItem{Lead multiple projects from inception to completion while mentoring students with a variety of skill levels which resulted in a number of novel contributions and publications}
+      \resumeItem{$1^{st}$ place Student Research Conference presentation}
+      \resumeItem{Explored intersection of probabilistic programming and parametric learning}
+        \resumeItem{Developed a system to improve MRI quality using a denoising auto encoder}
+        \resumeItem{Designed deep architecture to improve hearing aid quality resulting in signal to noise ratio increase of 197\%}
+        \resumeItem{Utilized: python, NLP, computer vision, data science}
+
+      \resumeItemListEnd
+
+%\resumeOneLineSubheading
+%      {BYU Math Department - Competitive Coding Instructor}{Aug 2017 - Present}
+%      \resumeItemListStart
+%        \resumeItem
+%          {Designed a course targeted to teach applied math students about technical problem solving while also teaching interview strategy, and various programming languages}
+%      \resumeItemListEnd
+      
+%    \resumeSubheading
+%      {C\&P Data Science Consulting}{Provo, UT}
+%      {Co-Founder}{May 2017 - Present}
+%      \resumeItemListStart
+%        \resumeItem{Founding}
+%          {Met and worked with business owners to provide innovative and useful solutions to their business problems by answering pertinent questions with their data resulting in 100\% customer satisfaction
+%}
+%      \resumeItemListEnd
+
+%    \resumeOneLineSubheading
+%    {Private Capital Group - Software Engineer, Intern}{May - Oct 2016}
+%      \resumeItemListStart
+%        \resumeItem
+%          {Developed web solutions to significantly increase employee effectiveness by creating automated systems that resulted in yearly savings of over \$200,000}
+%        \resumeItem
+%          {Collected, cleaned, and analyzed internal and external data which was built into reporting dashboards that tracked key business insights and allowed partners to make informed decisions}
+%          \resumeItem
+%          {Decreased product downtime by 47\% by implemented full testing suite and fixing critical bugs}
+%          \resumeItem{Utilized: python, javascript, html/css, git, SQL}
+%      \resumeItemListEnd
+      
+%      \resumeOneLineSubheading
+%      {Domo Inc - App Assurance Intern}{Feb 2016 - Apr 2016}
+%      \resumeItemListStart
+%        \resumeItem
+%          {Combined technical and business knowledge to ensure that new business related apps were useful to consumers}
+%         \resumeItem
+%          {Authored and created several Domo business apps, designed to answer user business questions}
+%
+%      \resumeItemListEnd
+%      \resumeOneLineSubheading
+%      {BYU Math Department - PDE Research Assistant}{Sept 2015 - Apr 2016}
+%      \resumeItemListStart
+%        \resumeItem
+%          {Discovered proper boundary condition equations to more accurately model pressure waves using numerical methods, resulting in a method of approximation that was 3x faster than previous methods}
+%
+%      \resumeItemListEnd
+      \resumeOneLineSubheading
+      {Carnegie Mellon University - IT Lab Research Fellow}{June - Aug 2015}
+      \resumeItemListStart
+        \resumeItem
+          {Excelled in machine learning course work as a top 3 student in the cohort, achieving a 4.0}
+         \resumeItem
+          {Analyzed data and developed a custom web game to help local refugees learn English}
+      \resumeItemListEnd
+      
+%      \resumeOneLineSubheading
+%      {Full-Stack Web Developer - BYU Studies}{Jan 2014 - Mar 2015 }
+%      \resumeItemListStart
+%        \resumeItem
+%          {Led a web team of 3 in maintaining a VB/ASP.NET website with thousands of unique visitors, increasing traffic and profitability by over 38\% }
+%         \resumeItem
+%          {Managed large SQL databases while analyzing customer information to improve overall business increasing customer retention by 11\%}
+%
+%      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Course Work-----------------
+%\section{Course Work}
+%  \resumeSubHeadingListStart
+%    \resumeItem{Deep Learning, Managing a Software Startup, Machine Learning, Applied Data Science, Data Structures, Computational Design, Linear Algebra, Numerical Methods, Probability Theory, Algorithm Design, Optimization, Control Theory, Modeling, Data Visualization}
+%        
+%  \resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+%\section{Skills}
+%  \resumeSubHeadingListStart
+%    \resumeItem{Python, JavaScript, C++, R, MATLAB, Algorithm Design, Optimization, Data Structures, Numerical Methods, NLP, Machine Learning, Deep Learning, Testing, Data Visualization, HTML, CSS, VB.Net, SQL, MongoDB, Version Control, Unix  }
+%        
+%  \resumeSubHeadingListEnd
+
+%-----------Other Experience-----------------
+\section{Other Experience}
+  \resumeSubHeadingListStart
+%  \resumeSubItem{Start up acquisition}
+%{Founded Legal Leaf and lead a team of 3 while building product. Experienced 10x growth in 8 months which resulted in our acquisition. Product awarded \textit{most innovative} and \textit{best use of AI} from GLH Utah}
+  \resumeSubItem{Communication}
+{Selected by faculty and staff to represent my college's 4,000+ students by presenting my research to BYU's \$1 million+ donors and top administration.}
+    \resumeSubItem{$2^{nd}$ place BYU ACM Hackathon 2019}
+    {Built a computer vision pong game that is controlled with hand detection}
+      \resumeSubItem{$2^{nd}$ place BI Wolff Hackathon 2018}
+    {Built prescriptive ML solution to predict individual risk of becoming homeless}
+	\resumeSubItem{$1^{st}$ place BYU ACM Hackathon 2017}
+      {Created Auto Dino program to perfectly play the chrome dino no wifi game}
+    \resumeSubItem{$1^{st}$ place BYU ACM Hackathon 2016}
+      {Created \emph{Mathify} app using polynomial interpolation to display text as math}
+      
+%    \resumeItem{\textbf{$1^{st}$ place BYU ACM Summer Coding Competition 2018, 2019}}
+%    \resumeItem{\textbf{Top 5 BYU ACM Fall Coding Competition 2017}}
+%    \resumeSubItem{Modeling and Simulation}
+%    {Modeled personal weight goals using a Forbes based ODE system with individualized energy balance and activity level resulting in a personalized math based fitness plan}
+%    \resumeSubItem{NLP}
+%    {Performed sentiment analysis on lyrics of top 100 yearly billboard songs since 1960 and visualized data to find relationships between historical events and musical optimism which discovered a connection between historic events and popular music
+%}
+
+\resumeSubItem{$2^{nd}$ place Global Legal Hackathon Utah}
+    {Made a chrome extension using NLP to summarize terms and conditions which I grew to 2000 active users and sold}
+%    \resumeSubItem{Python 3.8 Open Source}
+%    {Fix small doc bug in cpython pull \#11683}
+%    \resumeSubItem{pyprobml Open Source}
+%    {A primary contributor for Machine Learning a Probabilistic Perspective Python code}
+\resumeSubItem{Data Science Blog}{300+ monthly readers. Data science problems solved with esoteric programming languages}
+    \resumeSubItem{Ranked 8th in world}
+    {Tetris in spring of 2011}
+%    \resumeSubItem{Computer Vision}
+%    {See \href{https://andrewnc.github.io/projects/projects.html}{https://andrewnc.github.io/projects/projects.html} for videos of my various vision projects}
+%    \resumeSubItem{NLP}
+%    {Built a simple search tool that takes a legal query and outputs a potential practice area, designed to help underprivileged gain better access to legal help}
+
+
+%	\resumeSubItem{Writing}
+%    {$95^{th}$ percentile average on verbal and writing sections on GRE}
+%    \resumeSubItem{Chrome Extension}
+%    {Built a personal chrome extension that used JavaScript to scrape housing data from various social media groups, comment on the posts, and email relevant information to myself to assist in finding affordable housing}
+%\resumeSubItem{Data Science}
+%    {Collected, cleaned, engineered, and analyzed data exploring the relationship between market health and US retirement activities. Found that employer sponsored retirement plans are less susceptible to market declines than privately managed retirement plans.}
+
+%        \resumeSubItem{Computer Vision/Control Theory}
+%    {Developed computer vision curriculum for a control theory class and built an autonomous following car}
+
+%    \resumeSubItem{Web Scraping}
+%    {Extensive experience collecting data using selenium and other web scraping frameworks}
+  \resumeSubHeadingListEnd
+  
+
+
+\end{document}
+
